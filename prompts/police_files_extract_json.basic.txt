@@ -18,4 +18,3 @@ Return a list of JSON objects with the following keys:
 ---
 
 Respond with a triple backtick (```) enclosed JSON object, satisfying the above criteria as accurately and as possible. If none of the information is available in the report, respond with an empty JSON list. If you need to output multiple records, return a list of objects:
-```
