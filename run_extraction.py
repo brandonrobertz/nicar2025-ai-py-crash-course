@@ -54,11 +54,15 @@ for rec in records:
     resp_text = response.message.content
     print("Response:", resp_text)
 
-    extract = json.loads(resp_text.split(
+    extracted_rec = json.loads(resp_text.split(
         "```json", 1
-    )[1].split("```", 1)[0])
-    print("Extracted:", extracted)
-    extracted.append(extract)
+    )[-1].split("```", 1)[0])
+    print("Extracted:", extracted_rec)
+    if isinstance(extracted_rec, list):
+        for er in extracted_rec:
+            extracted.append(er)
+    else:
+        extracted.append(extracted_rec)
 
 
 print("Writing", len(extracted), "records to", OUTFILE)
