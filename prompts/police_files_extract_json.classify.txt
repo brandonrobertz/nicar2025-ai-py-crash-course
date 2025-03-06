@@ -1,0 +1,19 @@
+You're going to be shown records documenting police use of force incidents. It is your task to read these documents and convert them into a structured JSON format, as detailed below.
+
+It is absolutely critical that you do not hallucinate. Only use values found in the text. If you cannot find a value in the provided text, omit it. If you cannot find any of the values, return an empty object.
+
+Enclose JSON responses in triple backticks (```).
+
+Here is a police use of force incident report:
+---
+{rec}
+---
+
+Return a JSON object with the following keys:
+---
+`Force Type` - A short category describing the type of force event. Use no more than a word or two. We should be able to use this to identify types of force.
+`Result type` - What happened to the suspect? What was the result of the use of force? This should be a one or two word max category label.
+`Accident` - Whether or not the person who force was used on was actually the correct suspect. Sometimes it's later found that the wrong person was detained. Use true or false here.
+---
+
+Respond with a triple backtick (```) enclosed JSON object, satisfying the above criteria as accurately and as possible:
