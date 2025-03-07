@@ -120,7 +120,7 @@ python run_entity_extract.py data/example_entities.lower.txt PER
 We can try another model.
 
 ```
-dslim/bert-base-NER-uncased
+python run_entity_extract.py data/example_entities.lower.txt PER dslim/bert-base-NER-uncased
 ```
 
 
