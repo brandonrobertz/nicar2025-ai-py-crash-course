@@ -1,6 +1,7 @@
 import csv
 import os
 import json
+import sys
 
 
 def load_records(filepath, encoding='utf-8'):
