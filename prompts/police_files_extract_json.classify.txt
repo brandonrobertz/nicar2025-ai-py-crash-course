@@ -13,7 +13,7 @@ Return a JSON object with the following keys:
 ---
 `Force Type` - A short category describing the type of force event. Use no more than a word or two. We should be able to use this to identify types of force.
 `Result type` - What happened to the suspect? What was the result of the use of force? This should be a one or two word max category label.
-`Accident` - Whether or not the person who force was used on was actually the correct suspect. Sometimes it's later found that the wrong person was detained. Use true or false here.
+`Accidental` - Whether or not the person who force was used on was actually the correct suspect. Sometimes it's later found that the wrong person was detained. Use true here to indicate the suspect they were after wasn't the person who force was used against. Use false otherwise (person was arrested or suspect was known but escaped).
 ---
 
 Respond with a triple backtick (```) enclosed JSON object, satisfying the above criteria as accurately as possible:

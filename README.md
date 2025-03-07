@@ -64,7 +64,32 @@ Make sure the file you want to load is in the repo directory. Two files have bee
 
 I have a function provided that can load the data.
 
+Our prompt is going to extract basic information from our PDF text file (`police_files_extract_json.basic.txt`).
+
+```
+python run_extraction.py
+```
+
+This will parse the files and spit out JSON results from each.
+
 ## 04: Try a classification prompt
+
+We can also use an LLM to categorize information. We have a prompt that will do that for us as well (`police_files_extract_json.classify.txt`)
+
+```
+python run_extraction.py data/IAPRO_UOF_2010-2020_Pgs.001-350_Requestor_Copy.json prompts/police_files_extract_json.classify.txt
+```
+
+We'll get back results like:
+
+```
+Response: ```json
+{
+  "Force Type": "Detain",
+  "Result type": "Wrong Person",
+  "Accident": false
+}
+```
 
 ## Meet Huggingface
 
