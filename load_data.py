@@ -38,3 +38,8 @@ def load_records(filepath, encoding='utf-8'):
         return data
     else:
         raise NotImplementedError(f"Don't know how to load this file! {filepath}")
+
+
+if __name__ == "__main__":
+    for ix, rec in enumerate(load_records(sys.argv[1])):
+        print("Record:", ix, "Text:", rec)
