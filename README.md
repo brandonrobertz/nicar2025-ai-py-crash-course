@@ -6,6 +6,8 @@ Code and resources for the NICAR 2025 AI starter pack Python workshop
 
 Instructions are found here: [https://ollama.com/download/mac](https://ollama.com/download/mac)
 
+You'll need to extract the zip and run the `ollama` command found inside. It will prompt you for access, which you'll need to grant. If it asks to install the shell command, do it.
+
 Once you set this up, test you can run the `ollama` command on your command line. You should see something like:
 
 ```
@@ -61,3 +63,10 @@ The NICAR (News Investigators and Reporters) Conference is an annual gathering o
 Make sure the file you want to load is in the repo directory. Two files have been provided as an example that you can use.
 
 I have a function provided that can load the data.
+
+## Try a classification prompt
+
+## Meet Huggingface
+
+## Try against the folder of files
+

@@ -16,4 +16,4 @@ Return a JSON object with the following keys:
 `Accident` - Whether or not the person who force was used on was actually the correct suspect. Sometimes it's later found that the wrong person was detained. Use true or false here.
 ---
 
-Respond with a triple backtick (```) enclosed JSON object, satisfying the above criteria as accurately and as possible:
+Respond with a triple backtick (```) enclosed JSON object, satisfying the above criteria as accurately as possible:

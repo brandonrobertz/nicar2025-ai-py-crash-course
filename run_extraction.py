@@ -4,26 +4,34 @@ import sys
 
 import ollama
 
-from load_file import load_records
-
-
-INFILE="data/IAPRO_UOF_2010-2020_Pgs.001-350_Requestor_Copy.json"
-OUTFILE="output.{int(datetime.now().timestamp())}.json"
-PROMPT="prompts/police_files_extract_json.basic.txt"
+from load_data import load_records
 
 
 try:
-    model = sys.argv[1]
+    INFILE=sys.argv[1]
 except IndexError:
-    model = 'llama3.2'
+    INFILE="data/IAPRO_UOF_2010-2020_Pgs.001-350_Requestor_Copy.json"
+
+try:
+    PROMPT=sys.argv[2]
+except IndexError:
+    PROMPT="prompts/police_files_extract_json.basic.txt"
+
+try:
+    MODEL = sys.argv[3]
+except IndexError:
+    MODEL = 'llama3.2'
+
+OUTFILE=f"output-extract.{int(datetime.now().timestamp())}.json"
+
 
 
 try:
-    ollama.chat(model)
+    ollama.chat(MODEL)
 except ollama.ResponseError as e:
     if e.status_code == 404:
-        print(f"Downloading model: {model}")
-        ollama.pull(model)
+        print(f"Downloading model: {MODEL}")
+        ollama.pull(MODEL)
     else:
         raise(e)
 
@@ -40,7 +48,7 @@ print("Loaded", len(records), "records")
 for rec in records:
     prompt = prompt_base.format(rec=rec)
     response = ollama.chat(
-        model=model,
+        model=MODEL,
         options={
             "temperature": 0.0,
         },
