@@ -1,0 +1,28 @@
+Receipt: 46042
+Acct #
+5023
+City Of Pacific
+100 3rd Avenue SE
+Pacific, WA 98047
+253-929-1100
+09/29/2020
+Pacific, WA 98047
+Treasurer's Receipts
+Memo PR 20-086, BRANDON ROBERTS
+Copy
+Fees/AdminService
+Fees
+0.20
+Non Taxed Amt:
+Total:
+Chk: 1009
+Ttl Tendered:
+Change:
+Issued By: Tarra Mannie
+09/29/2020 15:08:25
+0.20
+0.20
+0.20
+0.20
+0.00
+

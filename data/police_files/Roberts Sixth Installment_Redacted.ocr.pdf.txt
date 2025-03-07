@@ -1,0 +1,87 @@
+Complaint
+Type
+Officer
+Date
+Opened
+Employee
+Complaint
+IA 19-01
+Internal
+Complaint
+Esparza
+Clements
+Patrol Vehicle Andreano
+Accident
+8/6/2019
+9/18/2019
+9/20/2019
+Patrol vehicle Esparza accident
+9/23/2019
+Patrol vehicle Kretchman 10/15/2019
+accident
+IA 19-02
+2019 Complaint Log
+Description
+Result
+Officer was disrespectful and insubordinate to Sustained a supervisor.
+Written Reprimand
+Officer failed to file misdemeanor case with PA Sustained in timely manner.
+Verbal Counseling
+Officer's patrol vehicle struck yellow post
+Sustained
+barrier at city yard gas pump. Minor damage
+Verbal Counseling
+Officer backing in patrol vehicle struck another
+Sustained
+vehicle. Minor damage.
+Verbal Counseling
+Patrol vehicle totaled during domestic dispute Sustained call response. Policy violations present for safe operation of emergency vehicle.
+Written Reprimand
+000001
+Assigned
+Investigator
+Date Closed
+Captain Wilkie
+9/13/2019
+Sergeant Gravel
+10/15/2019
+Sergeant Niro
+10/2/2019
+Captain Bailey
+9/30/2019
+Captain Wilkie
+11/25/2019
+
+Complaint
+Туре
+Officer
+Date
+Opened
+Description
+Result
+Assigned
+Investigator
+Date Closed
+Other Agency Andreano
+Complaint
+IA 19-04
+Kretchman
+12/17/2019
+Officers did not arrest DUI driver during MVA Sustained investigation.
+Documented Verbal
+Counseling (Andreano)
+Captain Wilkie
+1/23/2020
+Employee
+Complaint
+IA 19-05
+Lolmaugh
+12/31/2019
+Verbal counseling/coaching
+(Kretchman)
+Officer was disrespectful, insubordinate and Sustained did not follow instruction and lawful order.
+Time off
+Captain Wilkie
+2/9/2020
+000002
+

@@ -1,0 +1,40 @@
+BANCOR POS
+ISSUED PROPERTY
+Hand Receipt
+LAKE WOOD POLICE DEPARTMENT
+| Item Number:
+Description of Property
+Serial Number
+Asset Tag
+Number
+SECTOR
+3
+Pentax Rocket Jet 3 Printer
+062863
+PorKEr DEr le PRITER
+104435080
+Hand Held Scanner 4600
+1033880BA9
+Quantity
+Date: 10/1/4
+Printed Name: James Loseaws
+Signature:
+OM/003/REV 06/11
+8-15
+
+LAKEWOOD POLICE DEPARTMENT
+Hand Receipt for Property
+Section:
+Item Number: Description of Property
+Serial Number
+Asset Tag
+Number
+West Protective
+1028375
+Quantity
+Date:
+Siongth
+14157
+OM/003/REV 10/08
+8-15
+

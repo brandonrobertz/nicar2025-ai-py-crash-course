@@ -1,0 +1,36 @@
+Department
+First name Last name File #
+Occurred date Allegation
+Finding
+Action taken
+Action taken date
+Longview Police Jennifer
+Jolly
+IC19-003 May 9 2019
+Standards of Conduct
+Sustained Written Warning Jul 4 2019
+Longview Police Jennifer
+Jolly
+IC20-001 Jan 29 2020
+Property and Evidence Sustained Written Warning Feb 20 2020
+Longview Police Dawn
+Taylor
+IC20-002 Mar 16 2020
+Standards of Conduct
+Sustained Written Warning
+Mar 26 2020
+Longview Police Shawn
+Close
+IC20-004 Apr 15 2020
+Standards of Conduct
+Sustained
+Written Warning May 20 2020
+Longview Police
+Terry
+Reece
+C20-003
+Apr 24 2020
+Standards of Conduct
+Sustained Written Warning
+Jun 4 2020
+

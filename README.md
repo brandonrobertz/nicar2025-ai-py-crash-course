@@ -44,7 +44,7 @@ Set up a virtualenv, install dependencies.
 Run these steps:
 
 ```
-python -m virtualenv venv
+python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python load_ai.py
@@ -58,15 +58,19 @@ After a few minutes, make sure you get a response better than this:
 The NICAR (News Investigators and Reporters) Conference is an annual gathering of investigative journalists, researchers, and media professionals focused on investigative reporting, data journalism, and storytelling techniques. It's organized by the Center for Investigative Reporting at the University of California, Berkeley.
 ```
 
-## 03: Step Three - Set up file loading and prompt
+## 03: Set up file loading and prompt
 
 Make sure the file you want to load is in the repo directory. Two files have been provided as an example that you can use.
 
 I have a function provided that can load the data.
 
-## Try a classification prompt
+## 04: Try a classification prompt
 
 ## Meet Huggingface
 
 ## Try against the folder of files
+
+https://huggingface.co/dslim/distilbert-NER
+
+We can take any NER model off here and use it directly. Most models have a piece of code in the README we can use, too. Copy pasta that and run it. Test out a bunch of models.
 
