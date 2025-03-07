@@ -17,4 +17,4 @@ Return a list of JSON objects with the following keys:
 `Division` - The police division involved in this incident.
 ---
 
-Respond with a triple backtick (```) enclosed JSON object, satisfying the above criteria as accurately and as possible. If none of the information is available in the report, respond with an empty JSON list. If you need to output multiple records, return a list of objects:
+Respond with a triple backtick (```) enclosed JSON object, satisfying the above criteria as accurately as possible. If none of the information is available in the report, respond with an empty JSON list. If you need to output multiple records, return a list of objects:
