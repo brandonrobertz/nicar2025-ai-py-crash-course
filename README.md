@@ -2,7 +2,7 @@
 
 Code and resources for the NICAR 2025 AI starter pack Python workshop
 
-## 01: Step One - Set up Ollama
+## 01: Set up Ollama
 
 Instructions are found here: [https://ollama.com/download/mac](https://ollama.com/download/mac)
 
@@ -37,7 +37,7 @@ Flags:
 Use "ollama [command] --help" for more information about a command.
 ```
 
-## 02: Step Two - Set up Python
+## 02: Set up Python
 
 Set up a virtualenv, install dependencies.
 
