@@ -41,46 +41,31 @@ tokenizer = AutoTokenizer.from_pretrained(
     MODEL, clean_up_tokenization_spaces=True,
 )
 model = AutoModelForTokenClassification.from_pretrained(MODEL)
-nlp = pipeline("ner", model=model, tokenizer=tokenizer)
+nlp = pipeline("ner", model=model, tokenizer=tokenizer,
+               # This outputs grouped entities
+               aggregation_strategy="simple")
 
 
 def extract_entities(entities, etype="ORG"):
     """
-    Extract organization names (as strings) from Hugging Face NER model
+    Extract full entity names (as strings) from Hugging Face NER model
     output, which outputs a data structure of standard NER tags.
     """
-    organizations = []
+    entity_strings = []
     current_org = []
 
     for entity in entities:
-        # Skip if not an organization entity
-        if entity['entity'] not in [f'B-{etype}', f'I-{etype}']:
+        if entity.get("entity_group") != etype:
             continue
+        entity_strings.append(entity["word"])
 
-        # If we encounter a B-ORG and already have an org in progress
-        # then we save it (I havent seen this in practice though)
-        if entity['entity'] == f'B-{etype}' and current_org:
-            organizations.append(" ".join(current_org))
-            current_org = []
-
-        # Clean up tokenization artifacts (like ##)
-        word = entity['word']
-        if word.startswith('##'):
-            # Handle subword tokens that start with ##
-            if current_org:
-                # Append to the last word without space
-                current_org[-1] += word[2:]
-            else:
-                # Unlikely case, but handle it
-                current_org.append(word[2:])
+    final = []
+    for e in entity_strings:
+        if not e.startswith("##") or not final:
+            final.append(e)
         else:
-            current_org.append(word)
-
-    # Add the last organization if there's one in progress
-    if current_org:
-        organizations.append(" ".join(current_org))
-
-    return organizations
+            final[-1] += e[2:]
+    return final
 
 
 def get_ents(text):
