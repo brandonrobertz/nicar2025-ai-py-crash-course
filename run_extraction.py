@@ -68,7 +68,10 @@ for rec in records:
     print("Extracted:", extracted_rec)
     if isinstance(extracted_rec, list):
         for er in extracted_rec:
-            extracted.append(er)
+            extracted.append({
+                "record": rec,
+                "result": er
+            })
     else:
         extracted.append(extracted_rec)
 
