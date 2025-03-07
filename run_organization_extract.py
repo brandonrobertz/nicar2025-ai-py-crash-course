@@ -29,7 +29,7 @@ except IndexError:
 try:
     MODEL = sys.argv[3]
 except IndexError:
-    MODEL = "dslim/bert-base-NER"
+    MODEL = "dslim/distilbert-NER"
 
 OUTFILE=f"output-orgs.{int(datetime.now().timestamp())}.json"
 
